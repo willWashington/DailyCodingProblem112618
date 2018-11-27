@@ -19,17 +19,14 @@ namespace DailyCodingProblem112618
             int[] values1 = new int[] { 1, 2, 3, 4, 5 };
             int[] i = new int[] { 1 };
 
-            var result = values1.Except(i);  
+            var result = values1.Except(i);
             
-            foreach (var item in result)
-            {
-                int[] returnValues = new int[] { item * item };
-                foreach (int part in returnValues)
-                {                    
-                    Debug.WriteLine(part);
-                }                
-            }
-            //this is close, but I am not multiplying enough. I believe I'm going to have to have a few complex loops to complete this.
+            var multiplied = result.Aggregate(values1[1], (a, b) => a * b);
+            Debug.WriteLine(multiplied); //Output 1200000 ((((5*10)*20)*30)*40)
+
+            //this needs a foreach statement that runs multiplied against every character in the array, I believe
+
+
         }
     }
 }
