@@ -25,6 +25,10 @@ namespace DailyCodingProblem112618
             Debug.WriteLine(multiplied); //Output 1200000 ((((5*10)*20)*30)*40)
 
             //this needs a foreach statement that runs multiplied against every character in the array, I believe
+            //https://docs.microsoft.com/en-us/dotnet/api/system.array.indexof?view=netframework-4.7.2
+            //https://www.dotnetperls.com/except
+            //https://stackoverflow.com/questions/7105505/linq-aggregate-algorithm-explained
+
 
 
         }
